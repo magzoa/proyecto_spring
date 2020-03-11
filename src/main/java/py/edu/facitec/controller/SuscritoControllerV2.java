@@ -51,7 +51,7 @@ public class SuscritoControllerV2 {
 		
 	}
 	
-	
+					//    /{codigo}/
 	@DeleteMapping("/eliminar/{codigo}")
 	public void eliminarSuscrito(@PathVariable Long codigo) {
 
