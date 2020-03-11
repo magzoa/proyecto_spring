@@ -1,8 +1,12 @@
 package py.edu.facitec.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import py.edu.facitec.model.Suscrito;
 import py.edu.facitec.repository.SuscritoRepository;
@@ -35,6 +39,16 @@ public String acceder() {
 		//retornar la siguiente pagina
 		return "suscrito/ok";
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
