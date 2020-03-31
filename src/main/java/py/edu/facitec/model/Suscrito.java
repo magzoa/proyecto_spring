@@ -1,8 +1,13 @@
 package py.edu.facitec.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 
 
@@ -15,6 +20,11 @@ public class Suscrito {
 	private Long codigo;
 	private String nombre;
 	private String correo;
+	
+	
+	@JsonManagedReference(value = "variableRelacionCS")
+	@OneToMany(mappedBy = "suscrito" )
+	private List<Comentario> comentarios;
 	
 	
 	public Long getCodigo() {
@@ -34,6 +44,12 @@ public class Suscrito {
 	}
 	public void setCorreo(String correo) {
 		this.correo = correo;
+	}
+	public List<Comentario> getComentarios() {
+		return comentarios;
+	}
+	public void setComentarios(List<Comentario> comentarios) {
+		this.comentarios = comentarios;
 	}
 	
 	
