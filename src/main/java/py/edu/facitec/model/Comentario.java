@@ -17,6 +17,10 @@ public class Comentario extends General {
 	@ManyToOne
 	private Suscrito suscrito;
 	
+	@JsonBackReference(value="pc")
+	@ManyToOne
+	private Post post;
+	
 	
 	public String getTexto() {
 		return texto;
@@ -38,6 +42,6 @@ public class Comentario extends General {
 	}
 	
 	
-	
+	//@JsonBackReference(value = "variableRelacionCS")
 
 }

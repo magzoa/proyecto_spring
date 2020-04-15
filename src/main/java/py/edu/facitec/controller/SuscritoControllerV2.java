@@ -40,7 +40,7 @@ public class SuscritoControllerV2 {
 	
 	//suscritos/3
 	@GetMapping(value="/{codigo}")
-										//Cargar la url de arriba al codigo
+										
 	public Optional<Suscrito> getSuscrito(@PathVariable Long codigo){
 	
 		System.out.println("Recuperando un elemento Java a Json");

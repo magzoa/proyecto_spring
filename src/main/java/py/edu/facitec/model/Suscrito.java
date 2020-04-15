@@ -53,6 +53,6 @@ public class Suscrito {
 	}
 	
 	
-	
+	//@JsonManagedReference(value = "variableRelacionCS")
 
 }
